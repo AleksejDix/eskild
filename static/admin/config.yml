@@ -11,14 +11,6 @@ collections:
     files:
       - label: "Location"
         name: "location"
-        file: "content/location.md"
+        file: "content/location.json"
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - { label: Day, name: day, widget: string}
-              - { label: Time, name: time, widget: string}
+          - {label: "Title", name: "title", widget: "string"}
