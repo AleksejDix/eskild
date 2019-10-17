@@ -1,3 +1,11 @@
 {
-  "title": "hallo"
+  "title": "Öffnungszeiten",
+  "workingdays": {
+    "monday": "08:30–18:00",
+    "tuesday": "08:30–18:00",
+    "wednesday": "08:30–18:00",
+    "thursday": "08:30–18:00",
+    "saturday": "Geschlossen",
+    "sunday": "Geschlossen"
+  }
 }
