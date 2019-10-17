@@ -60,8 +60,7 @@ export default {
   ** Build configuration
   */
   markdownit: {
-    html: true,
-    typographer: true
+    injected: true,
   },
   build: {
     /*
