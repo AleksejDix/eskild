@@ -1,5 +1,7 @@
 # eskild
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/62e0c307-4207-40cf-85c8-240c2eb72e90/deploy-status)](https://app.netlify.com/sites/angry-lamport-752752/deploys)
+
 > My doozie Nuxt.js project
 
 ## Build Setup

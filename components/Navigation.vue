@@ -3,8 +3,8 @@
     <div v-for="(value, key) in links" :key="key">
       <nuxt-link
         exact
-        class="font-display inline-flex m-1 hover:bg-blue-100 text-lg rounded-full px-3 py-2 font-bold text-black hover:text-blue-800"
-        active-class="bg-blue-100 text-blue-800"
+        class="font-display inline-flex m-1 hover:bg-blue-100 text-lg rounded-full px-3 py-2 font-bold text-blue-900 hover:text-black"
+        active-class="bg-blue-100 text-black"
         :to="{name: key}"
       >
         <Icon :name="value.icon" />
@@ -34,7 +34,7 @@ export default {
           icon: 'icon-work'
         },
         contact: {
-          text: 'Kontakt',
+          text: 'Terminwunsch',
           icon: 'icon-chat-group'
         },
         location: {

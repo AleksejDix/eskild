@@ -22,8 +22,20 @@ module.exports = {
       flex: {
         '10auto': '1 0 auto',
       }
-    }
+    },
+    customForms: theme => ({
+      default: {
+        'input, textarea, select, multiselect, checkbox': {
+          borderColor: theme('colors.gray.400'),
+          '&:focus': {
+            borderColor: theme('colors.white'),
+          }
+        },
+      },
+    })
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('@tailwindcss/custom-forms'),
+  ]
 }

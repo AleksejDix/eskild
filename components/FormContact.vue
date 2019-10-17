@@ -1,0 +1,57 @@
+<template>
+  <form
+    name="ask-question"
+    method="post"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    autocomplete="on"
+    class="owl-y"
+    >
+
+    <input type="hidden" name="form-name" value="ask-question" />
+
+    <label class="block">
+      <span class="text-gray-700">Name</span>
+      <input v-model="form.name" class="form-input mt-1 block w-full" placeholder="Max Musterman" required autocomplete="name">
+    </label>
+
+    <label class="block">
+      <span class="text-gray-700">E-Mail</span>
+      <input v-model="form.email" type="email" class="form-input mt-1 block w-full" placeholder="max@muster.com"  autocomplete="email">
+    </label>
+
+    <label class="block">
+      <span class="text-gray-700">Telefon</span>
+      <input v-model="form.tel" type="tel"  class="form-input mt-1 block w-full" placeholder="+4952816218444" required autocomplete="tel">
+    </label>
+
+    <label class="block">
+      <span class="text-gray-700">Nachricht</span>
+      <textarea v-model="form.text" class="form-textarea mt-1 block w-full" rows="3" placeholder="Ihr wunschtermin"></textarea>
+    </label>
+
+    <div class="flex mt-6">
+      <label class="flex items-center">
+        <input v-model="form.protection" type="checkbox" class="form-checkbox">
+        <span class="ml-2">Ich stimme der <span class="underline">Datenschuzerklärung</span> zu.</span>
+      </label>
+    </div>
+
+    <button class="button">Senden</button>
+  </form>
+</template>
+<script>
+export default {
+  data () {
+    return {
+      form: {
+        name: '',
+        email: '',
+        tel: '',
+        text: '',
+        protection: false
+      }
+    }
+  }
+}
+</script>
