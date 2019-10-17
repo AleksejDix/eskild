@@ -9,6 +9,18 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Imprint"
+        name: "imprint"
+        file: "content/imprint.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: 'body', widget: 'markdown' }
+      - label: "Data Protection"
+        name: "dataprotection"
+        file: "content/dataprotection.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: 'body', widget: 'markdown' }
       - label: "Location"
         name: "location"
         file: "content/location.json"
