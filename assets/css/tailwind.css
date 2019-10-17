@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+html,
+body,
+#__nuxt,
+#__layout {
+  @apply h-full
+}
+
+#__layout {
+  @apply flex;
+  min-height: 548px;
+}
+
+h1 {
+  @apply font-display text-4xl
+}
+
+
+.primary {
+  @apply text-blue-400 fill-current;
+}
+.secondary {
+  @apply text-blue-900 fill-current;
+}
+
+
+.markdown p {
+  @apply text-lg
+}
