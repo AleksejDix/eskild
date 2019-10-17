@@ -13,4 +13,9 @@ collections:
         name: "location"
         file: "content/location.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Opening Times"
+            name: "openingtimes"
+            widget: "list"
+            fields:
+              - { label: Day, name: day, widget: string, default: "Geschlossen"}
