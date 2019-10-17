@@ -4,7 +4,6 @@
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    autocomplete="on"
     class="owl-y"
     >
 
@@ -22,7 +21,7 @@
 
     <label class="block">
       <span class="text-gray-700">Telefon</span>
-      <input name="tel" v-model="form.tel" type="tel"  class="form-input mt-1 block w-full" placeholder="+4952816218444" required autocomplete="tel">
+      <input required name="tel" v-model="form.tel" type="tel"  class="form-input mt-1 block w-full" placeholder="+4952816218444" autocomplete="tel">
     </label>
 
     <label class="block">
@@ -32,7 +31,7 @@
 
     <div class="flex mt-6">
       <label class="flex items-center">
-        <input name="protection" v-model="form.protection" type="checkbox" class="form-checkbox">
+        <input required name="protection" v-model="form.protection" type="checkbox" class="form-checkbox">
         <span class="ml-2">Ich stimme der <span class="underline">Datenschuzerklärung</span> zu.</span>
       </label>
     </div>
