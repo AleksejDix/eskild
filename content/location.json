@@ -1,5 +1,8 @@
 {
   "title": "Öffnungszeiten",
+  "location": "{\"type\":\"Point\",\"coordinates\":[9.2515759,51.9875304]}",
+  "adress": "Bombergallee 1 , Bad Pyrmont , Deutschland ",
+  "phone": "052816218444   ",
   "workingdays": {
     "monday": "08:30–18:00",
     "tuesday": "08:30–18:00",
