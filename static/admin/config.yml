@@ -14,6 +14,9 @@ collections:
         file: "content/location.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Location", name: "location", widget: "map" }
+          - { label: "Adress", name: "adress", widget: "string" }
+          - { label: "Phone", name: "phone",  widget: "string" }
           - label: "Working Days"
             name: "workingdays"
             widget: "object"
@@ -22,5 +25,6 @@ collections:
               - { label: Tuesday, name: tuesday, widget: string, default: "closed" }
               - { label: Wednesday, name: wednesday, widget: string, default: "closed" }
               - { label: Thursday, name: thursday, widget: string, default: "closed" }
+              - { label: Friday, name: friday, widget: string, default: "closed" }
               - { label: Saturday, name: saturday, widget: string, default: "closed" }
               - { label: Sunday, name: sunday, widget: string, default: "closed" }
