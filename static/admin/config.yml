@@ -19,3 +19,19 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Location"
+        name: "location"
+        file: "content/location.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - { label: Day, name: day, widget: string}
+              - { label: Time, name: time, widget: string}
