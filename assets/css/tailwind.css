@@ -1,7 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
+@import 'tailwindcss/screens';
+@tailwind screens;
 
 html {
   @apply bg-gray-100 font-medium border-t-4 border-orange-400
@@ -69,4 +70,12 @@ h1 {
 .button:active,
 .button:focus {
   @apply bg-gray-900
+}
+
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
 }

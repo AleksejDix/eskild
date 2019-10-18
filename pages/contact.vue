@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Terminwunsch</h1>
+     <hr class="border-t-4 border-teal-500 rounded my-6">
 
     <div>
       <div class="markdown">
