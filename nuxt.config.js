@@ -69,6 +69,7 @@ export default {
     injected: true,
   },
   build: {
+    extractCSS: true,
     /*
     ** You can extend webpack config here
     */
