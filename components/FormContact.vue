@@ -26,7 +26,7 @@
 
     <label class="block">
       <span class="text-gray-700">Nachricht</span>
-      <textarea name="text" v-model="form.text" class="form-textarea mt-1 block w-full" rows="3" placeholder="Ihr wunschtermin"></textarea>
+      <textarea name="text" v-model="form.text" class="form-textarea mt-1 block w-full" rows="3" placeholder="Ihr Wunschtermin"></textarea>
     </label>
 
     <div class="flex mt-6">

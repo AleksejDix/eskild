@@ -19,7 +19,7 @@ export default {
     script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap' }
     ]
   },
 
@@ -75,5 +75,18 @@ export default {
       });
 
     }
-  }
+  },
+  generate: {
+    routes: function() {
+      const fs = require('fs');
+      return fs
+        .readdirSync('./content/blog/posts')
+        .map(file => {
+          return {
+            route: `/blog/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
+            payload: require(`./content/blog/posts/${file}`),
+          };
+        });
+    },
+  },
 }

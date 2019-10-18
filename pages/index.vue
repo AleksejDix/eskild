@@ -1,23 +1,39 @@
 <template>
   <section>
-    <div>
-      <h1 class="title">Podologische Praxis E. Sörensen</h1>
+    <h1 class="title">Podologische Praxis E. Sörensen</h1>
+    <hr class="border-t-4 border-teal-500 rounded my-6">
 
-      <hr class="my-8 border-b border-blue-400 rounded-full"/>
-      <div></div>
-
-    </div>
+    <ul v-if="posts.length > 0" class="owl-y">
+      <li v-for="post in posts" :key="post.slug" class="py-6">
+        <PostPreview :post="post"/>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script>
 
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/Logo'
+import PostPreview from '~/components/PostPreview'
 
 export default {
   components: {
-    Logo
+    Logo,
+    PostPreview
   },
+  async asyncData() {
+    const files = await require.context('~/content/blog/posts/', false, /\.json$/)
+    const posts = files
+      .keys()
+      .map(key => {
+        const res = files(key);
+        res.slug = key.slice(2, -5);
+        return res;
+      });
+    return {
+      posts
+    }
+  }
 }
 </script>
 

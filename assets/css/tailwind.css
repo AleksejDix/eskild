@@ -3,6 +3,10 @@
 @import 'tailwindcss/utilities';
 
 
+html {
+  @apply bg-gray-100 font-medium border-t-4 border-orange-400
+}
+
 html,
 body,
 #__nuxt,
@@ -10,10 +14,10 @@ body,
   @apply h-full
 }
 
-#__layout {
-  @apply flex;
-  min-height: 548px;
+body {
+  min-height: 100%;
 }
+
 
 a {
   @apply no-underline
@@ -27,10 +31,10 @@ h1 {
 
 
 .primary {
-  @apply text-blue-400 fill-current;
+  @apply text-teal-400 fill-current;
 }
 .secondary {
-  @apply text-blue-900 fill-current;
+  @apply text-teal-900 fill-current;
 }
 
 
@@ -38,29 +42,27 @@ h1 {
 .owl-y > * + * {
   @apply mt-4
 }
-.markdown {
-  @apply pt-4
-}
+
 .markdown h2 {
   @apply text-xl leading-tight mt-8
 }
 
 .markdown p {
-  @apply text-blue-900 leading-normal
+  @apply text-teal-900 leading-normal
 }
 .markdown a:link,
 .markdown a:visited,
 .markdown a {
-  @apply text-blue-600
+  @apply text-teal-600
 }
 
 .markdown a:focus,
 .markdown a:hover {
-  @apply text-blue-600 border-b border-blue-900
+  @apply text-teal-600 border-b border-teal-900
 }
 
 .button {
-  @apply bg-black text-white shadow rounded px-3 py-2 uppercase tracking-wide font-bold text-sm
+  @apply bg-black text-white shadow rounded px-4 py-2 uppercase tracking-wide font-bold text-sm
 }
 
 .button:hover,

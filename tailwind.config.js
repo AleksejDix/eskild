@@ -27,6 +27,9 @@ module.exports = {
       default: {
         'input, textarea, select, multiselect, checkbox': {
           borderColor: theme('colors.gray.400'),
+          backgroundColor: theme('colors.gray.100'),
+          borderRadius: theme('borderRadius.lg'),
+          borderWidth: theme('borderWidth[2]'),
           '&:focus': {
             borderColor: theme('colors.white'),
           }

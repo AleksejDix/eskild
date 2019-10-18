@@ -1,5 +1,6 @@
 <template>
-  <nav class="px-6 pt-6 overflow-y-auto text-base lg:text-sm lg:py-12 lg:pl-6 lg:pr-8 sticky top-0 ">
+  <nav>
+    <slot/>
     <div v-for="(value, key) in links" :key="key">
       <nuxt-link
         exact
@@ -29,9 +30,9 @@ export default {
           text: 'Startseite',
           icon: 'icon-home'
         },
-        workshops: {
-          text: 'Workshops',
-          icon: 'icon-work'
+        blog: {
+          text: 'Blog',
+          icon: 'icon-click-target'
         },
         contact: {
           text: 'Terminwunsch',
@@ -44,7 +45,11 @@ export default {
         certification: {
           text: 'Zertifikate',
           icon: 'icon-certificate'
-        }
+        },
+        workshops: {
+          text: 'Workshops',
+          icon: 'icon-work'
+        },
       }
     }
   }
