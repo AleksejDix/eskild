@@ -51,6 +51,11 @@ h1 {
 .markdown p {
   @apply text-teal-900 leading-normal
 }
+
+.markdown img {
+  @apply rounded-lg
+}
+
 .markdown a:link,
 .markdown a:visited,
 .markdown a {
@@ -59,7 +64,7 @@ h1 {
 
 .markdown a:focus,
 .markdown a:hover {
-  @apply text-teal-600 border-b border-teal-900
+  @apply text-teal-600 underline
 }
 
 .button {

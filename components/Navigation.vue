@@ -45,6 +45,10 @@ export default {
           text: 'Startseite',
           icon: 'icon-home'
         },
+        services: {
+          text: 'Dienstleistungen',
+          icon: 'icon-widget-add'
+        },
         blog: {
           text: 'Blog',
           icon: 'icon-click-target'

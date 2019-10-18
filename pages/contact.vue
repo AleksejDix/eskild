@@ -11,6 +11,12 @@
         <p>Für einen Termin rufen Sie uns bitte an, damit wir den für Sie richtigen Termin schnellst möglich vereinbaren können.</p>
 
         <p>Natürlich gilt das auch für Haus- und Heimbesuche.</p>
+
+        <p>
+          Da wir die Praxis als reine Bestellpraxis führen können wir auch individuell Termine anbieten.</p>
+ <p>
+Für Neupatienten nehmen wir uns 60 min. Zeit, daher kann es zu Wartezeiten auf einen Aufnahmetermin kommen, bitte haben Sie hierfür Verständnis.</p>
+        </p>
       </div>
       <section>
         <h2>
