@@ -48,12 +48,18 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'nuxt-purgecss'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
+  purgeCSS: {
+   // your settings here
+    whitelist: ['nuxt-progress'],
+    whitelistPatterns: [/page$/],
+  },
   axios: {
   },
   /*
