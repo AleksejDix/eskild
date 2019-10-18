@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1 class="title"> {{title}}</h1>
+      <hr class="border-t-4 border-teal-500 rounded my-6">
     {{$data}}
     <img :src="`https://image.maps.api.here.com/mia/1.6/mapview?app_id=Yxo5Jaup3FK4OcKI1dVN&app_code=wF15NPNC1c2Q1GvYHIUU4g&co=Germany&z=15&ci=Bad+Pyrmont&s=Bombergallee&n=1&h=360&w=640`" alt="karte praxis sörensen"/>
     {{workingdays}}
