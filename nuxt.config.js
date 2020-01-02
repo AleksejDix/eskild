@@ -10,17 +10,23 @@ export default {
     htmlAttrs: {
       lang: 'de',
     },
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s - Podologische Praxis E. Sörensen',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap'
+      }
     ]
+
   },
 
   /*
