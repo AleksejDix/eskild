@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title"> {{title}}</h1>
+    <h1 class="title">{{title}}</h1>
       <hr class="border-t-4 border-teal-500 rounded my-6">
     <div class="markdown" v-html="$md.render(body)"></div>
   </div>
@@ -13,6 +13,11 @@ export default {
     const file = await require(`~/content/${route.name}.json`);
     return {
       ...file
+    }
+  },
+  head() {
+    return {
+      title: this.title
     }
   }
 }

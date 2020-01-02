@@ -1,13 +1,13 @@
 <template>
-  <h1>Work in Progress</h1>
+  <h1>Workshops</h1>
 </template>
 
 <script>
 export default {
-
+  head () {
+    return {
+      title: 'Workshops'
+    }
+  }
 }
 </script>
-
-<style>
-
-</style>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1 class="title"> {{title}}</h1>
+    <h1 class="title">{{title}}</h1>
     <hr class="border-t-4 border-teal-500 rounded my-6">
     <ul class="text-gray-700">
-      <li v-for="item in classic" class="mt-2">
-        <Icon name="icon-check" class="mr-2"/> <span>{{item}}</span>
+      <li v-for="(item, index) in classic" :key="index" class="mt-2">
+        <Icon name="icon-check" class="mr-2" /> <span>{{item}}</span>
       </li>
     </ul>
     <div class="markdown" v-html="$md.render(body)"></div>
@@ -36,6 +36,11 @@ export default {
     console.log(file)
     return {
       ...file
+    }
+  },
+  head () {
+    return {
+      title: 'Startseite'
     }
   }
 }
