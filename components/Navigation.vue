@@ -49,10 +49,10 @@ export default {
           text: 'Dienstleistungen',
           icon: 'icon-widget-add'
         },
-        blog: {
-          text: 'Blog',
-          icon: 'icon-click-target'
-        },
+        // blog: {
+        //   text: 'Blog',
+        //   icon: 'icon-click-target'
+        // },
         contact: {
           text: 'Terminwunsch',
           icon: 'icon-chat-group'
@@ -61,14 +61,14 @@ export default {
           text: 'Standort',
           icon: 'icon-location-pin'
         },
-        certification: {
-          text: 'Zertifikate',
-          icon: 'icon-certificate'
-        },
-        workshops: {
-          text: 'Workshops',
-          icon: 'icon-work'
-        },
+        // certification: {
+        //   text: 'Zertifikate',
+        //   icon: 'icon-certificate'
+        // },
+        // workshops: {
+        //   text: 'Workshops',
+        //   icon: 'icon-work'
+        // },
       }
     }
   }
