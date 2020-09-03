@@ -1,13 +1,13 @@
 <template>
-  <h1>Workshops</h1>
+  <h1 class="page-title">Workshops</h1>
 </template>
 
 <script>
 export default {
-  head () {
+  head() {
     return {
-      title: 'Workshops'
-    }
+      title: "Workshops"
+    };
   }
-}
+};
 </script>

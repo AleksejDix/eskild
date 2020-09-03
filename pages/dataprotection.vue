@@ -1,24 +1,23 @@
 <template>
   <div>
-    <h1 class="title">{{title}}</h1>
-      <hr class="border-t-4 border-teal-500 rounded my-6">
-    <div class="markdown" v-html="$md.render(body)"></div>
+    <h1 class="page-title">{{ page.title }}</h1>
+    <hr class="border-t-4 border-teal-500 rounded my-6" />
+    <div class="markdown" v-html="$md.render(page.body)"></div>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData(context) {
-    const { route } = context
-    const file = await require(`~/content/${route.name}.json`);
+  async asyncData({ $content, route }) {
+    const page = await $content(route.name).fetch();
     return {
-      ...file
-    }
+      page
+    };
   },
   head() {
     return {
-      title: this.title
-    }
+      title: this.page.title
+    };
   }
-}
+};
 </script>

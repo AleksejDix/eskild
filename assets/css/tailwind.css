@@ -5,7 +5,7 @@
 @tailwind screens;
 
 html {
-  @apply bg-gray-100 font-medium border-t-4 border-orange-400
+  @apply bg-gray-100 border-t-4 border-orange-400
 }
 
 html,
@@ -19,16 +19,9 @@ body {
   min-height: 100%;
 }
 
-
-a {
-  @apply no-underline
-}
-
-h1 {
+.page-title {
   @apply font-display text-4xl
 }
-
-
 
 
 .primary {
@@ -38,34 +31,6 @@ h1 {
   @apply text-teal-900 fill-current;
 }
 
-
-.markdown > * + *,
-.owl-y > * + * {
-  @apply mt-4
-}
-
-.markdown h2 {
-  @apply text-xl leading-tight mt-8
-}
-
-.markdown p {
-  @apply text-teal-900 leading-normal
-}
-
-.markdown img {
-  @apply rounded-lg
-}
-
-.markdown a:link,
-.markdown a:visited,
-.markdown a {
-  @apply text-teal-600
-}
-
-.markdown a:focus,
-.markdown a:hover {
-  @apply text-teal-600 underline
-}
 
 .button {
   @apply bg-black text-white shadow rounded px-4 py-2 uppercase tracking-wide font-bold text-sm

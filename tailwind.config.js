@@ -15,7 +15,6 @@ module.exports = {
     },
     extend: {
       width: {
-
         '80': '20rem',
         '160': '40rem',
         '240': '60rem',
@@ -41,5 +40,6 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/custom-forms'),
+    require('@tailwindcss/typography'),
   ]
 }
