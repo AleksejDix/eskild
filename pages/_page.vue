@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h1 class="page-title">{{ page.title}}</h1>
+  <section v-if="page">
+    <h1 class="page-title">{{ page.title }}</h1>
     <hr class="border-t-4 border-teal-500 rounded my-6" />
     <nuxt-content class="prose" :document="page"></nuxt-content>
   </section>
@@ -8,15 +8,15 @@
 
 <script>
 export default {
-  async asyncData({ $content, route }) {
-    const page = await $content('home').fetch();
+  async asyncData({ $content, route, params }) {
+    const page = await $content(params.page).fetch();
     return {
       page
     };
   },
   head() {
     return {
-      title: this.page.title
+      title: this.page && this.page.title
     };
   }
 };

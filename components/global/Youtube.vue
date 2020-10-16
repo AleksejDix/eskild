@@ -5,7 +5,7 @@
       class="w-full h-full absolute inset-0"
       type="text/html"
       allowfullscreen="allowfullscreen"
-      :src="video"
+      :src="src"
       frameborder="0"
     />
    </div>
@@ -13,6 +13,7 @@
 
 <script>
 export default {
-  props: ['video']
+  name: 'Youtube',
+  props: ['src']
 }
 </script>

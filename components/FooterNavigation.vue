@@ -1,6 +1,6 @@
 <template>
-  <nav class="flex">
-    <nuxt-link class="text-gray-700 text-sm mr-4" :to="{name: key}" v-for="(value, key) in links" :key="key">{{value.text}}</nuxt-link>
+  <nav class="flex" data-cy="footernav">
+    <nuxt-link class="text-gray-700 text-sm mr-4" :to="key" v-for="(value, key) in links" :key="key">{{value.text}}</nuxt-link>
   </nav>
 </template>
 

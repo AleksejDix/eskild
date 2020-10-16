@@ -6,16 +6,16 @@
     }"
   >
     <slot />
-    <div v-for="(value, key) in links" :key="key">
+    <div v-for="(page, index) in links" :key="index">
       <nuxt-link
         @click.native="$emit('close')"
         exact
         class="font-display inline-flex m-1 hover:bg-blue-100 text-lg rounded-full px-3 py-2 font-bold text-blue-900 hover:text-black"
         active-class="bg-blue-100 text-black"
-        :to="{ name: key }"
+        :to="page.url"
       >
-        <Icon :name="value.icon" />
-        <span class="px-2">{{ value.text }}</span>
+        <Icon :name="page.icon" />
+        <span class="px-2">{{ page.text }}</span>
       </nuxt-link>
     </div>
 
@@ -41,36 +41,43 @@ export default {
   props: ["open"],
   data() {
     return {
-      links: {
-        index: {
+      links: [
+        {
+          url: '/',
           text: "Startseite",
           icon: "icon-home"
         },
-        services: {
+        {
+          url: '/services',
           text: "Dienstleistungen",
           icon: "icon-widget-add"
         },
-        blog: {
+        {
+          url: '/blog',
           text: "Blog",
           icon: "icon-click-target"
         },
-        contact: {
+        {
+          url: '/contact',
           text: "Terminwunsch",
           icon: "icon-chat-group"
         },
-        location: {
+        {
+          url: '/location',
           text: "Standort",
           icon: "icon-location-pin"
         },
-        certification: {
+        {
+          url: '/certification',
           text: "Zertifikate",
           icon: "icon-certificate"
         },
-        workshops: {
+        {
+          url: '/workshops',
           text: "Workshops",
           icon: "icon-work"
         }
-      }
+      ]
     };
   }
 };

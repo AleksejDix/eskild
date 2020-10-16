@@ -42,6 +42,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/global.js', 
   ],
   /*
   ** Nuxt.js dev-modules
@@ -55,7 +56,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/markdownit',
     'nuxt-purgecss',
     '@nuxt/content'
   ],
@@ -78,30 +78,5 @@ export default {
   },
   build: {
     extractCSS: true,
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-
-      config.module.rules.push({
-        test: /\.md$/,
-        include: path.resolve(__dirname, "content"),
-        loader: "frontmatter-markdown-loader",
-      });
-
-    }
-  },
-  generate: {
-    routes: function() {
-      const fs = require('fs');
-      return fs
-        .readdirSync('./content/blog/posts')
-        .map(file => {
-          return {
-            route: `/blog/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
-            payload: require(`./content/blog/posts/${file}`),
-          };
-        });
-    },
-  },
+  }
 }

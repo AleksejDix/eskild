@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <section>
     <h1 class="page-title">{{ page.title }}</h1>
     <hr class="border-t-4 border-teal-500 rounded my-6" />
-    <div class="markdown" v-html="$md.render(page.body)"></div>
-  </div>
+    <nuxt-content class="prose" :document="page"></nuxt-content>
+  </section>
 </template>
 
 <script>

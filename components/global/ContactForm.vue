@@ -1,12 +1,10 @@
 <template>
   <form
-    name="ask-question"
+    action="https://getsimpleform.com/messages?form_api_token=502d4ebb6e043c105ad2d0ed3da64ade"
     method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
     class="space-y-4"
   >
-    <input type="hidden" name="form-name" value="ask-question" />
+    <input type='hidden' name='redirect_to' value='http://localhost:3000/thank-you' />
 
     <label class="block">
       <span class="text-gray-700">Name</span>
