@@ -1,82 +1,75 @@
-
-const path = require('path');
+const path = require('path')
 export default {
-
-  mode: 'universal',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     htmlAttrs: {
-      lang: 'de',
+      lang: 'de'
     },
     titleTemplate: '%s - Podologische Praxis E. Sörensen',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
-    script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    script: [
+      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+    ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico' },
+        href: '/favicon.ico'
+      },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap'
+        href:
+          'https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap'
       }
     ]
-
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-    '~/plugins/global.js', 
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: ['~/plugins/global.js'],
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss',
+    'nuxt-purgecss'
   ],
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    'nuxt-purgecss',
-    '@nuxt/content'
-  ],
+   ** Nuxt.js modules
+   */
+  modules: ['nuxt-purgecss', '@nuxt/content'],
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
   purgeCSS: {
-   // your settings here
+    // your settings here
     whitelist: ['nuxt-progress'],
-    whitelistPatterns: [/page$/],
+    whitelistPatterns: [/page$/]
   },
-  axios: {
-  },
+  axios: {},
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   markdownit: {
-    injected: true,
+    injected: true
   },
   build: {
-    extractCSS: true,
+    extractCSS: true
   }
 }

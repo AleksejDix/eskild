@@ -6,7 +6,10 @@
     }"
   >
     <slot />
-    <div v-for="(page, index) in links" :key="index">
+    <div
+      v-for="(page, index) in links.filter(({ online }) => online)"
+      :key="index"
+    >
       <nuxt-link
         @click.native="$emit('close')"
         exact
@@ -31,56 +34,63 @@
 </template>
 
 <script>
-import Icon from "./Icon";
-import Logo from "./Logo";
+import Icon from './Icon'
+import Logo from './Logo'
 export default {
   components: {
     Logo,
     Icon
   },
-  props: ["open"],
+  props: ['open'],
   data() {
     return {
       links: [
         {
           url: '/',
-          text: "Startseite",
-          icon: "icon-home"
+          text: 'Startseite',
+          icon: 'icon-home',
+          online: true
         },
         {
           url: '/services',
-          text: "Dienstleistungen",
-          icon: "icon-widget-add"
+          text: 'Dienstleistungen',
+          icon: 'icon-widget-add',
+          online: true
         },
         {
           url: '/blog',
-          text: "Blog",
-          icon: "icon-click-target"
+          text: 'Blog',
+          icon: 'icon-click-target',
+          online: false
         },
         {
           url: '/contact',
-          text: "Terminwunsch",
-          icon: "icon-chat-group"
+          text: 'Terminwunsch',
+          icon: 'icon-chat-group',
+          online: true
         },
         {
           url: '/location',
-          text: "Standort",
-          icon: "icon-location-pin"
+          text: 'Standort',
+          icon: 'icon-location-pin',
+          online: true
         },
         {
           url: '/certification',
-          text: "Zertifikate",
-          icon: "icon-certificate"
+          text: 'Zertifikate',
+          icon: 'icon-certificate',
+          online: false
         },
         {
           url: '/workshops',
-          text: "Workshops",
-          icon: "icon-work"
+          text: 'Workshops',
+          icon: 'icon-work',
+          online: false
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style scoped>
