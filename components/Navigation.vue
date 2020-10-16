@@ -61,7 +61,7 @@ export default {
           url: '/blog',
           text: 'Blog',
           icon: 'icon-click-target',
-          online: false
+          online: true
         },
         {
           url: '/contact',
@@ -79,13 +79,13 @@ export default {
           url: '/certification',
           text: 'Zertifikate',
           icon: 'icon-certificate',
-          online: false
+          online: true
         },
         {
           url: '/workshops',
           text: 'Workshops',
           icon: 'icon-work',
-          online: false
+          online: true
         }
       ]
     }
