@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "https://eskild.netlify.app",
   "ignoreTestFiles": "**/examples/*",
   "viewportHeight": 768,
   "viewportWidth": 1024

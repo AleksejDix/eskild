@@ -2088,6 +2088,19 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
+"@xstate/graph@^1.1.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@xstate/graph/-/graph-1.2.0.tgz#83618bbff4f801fecb9b4f33f1d4a44e1b5a40ff"
+  integrity sha512-6h8ZRmnHsg1BW2NmkM2gb1l6bJwi6SaSLi7ErFzzseLKmcQL2oWBSjHJdsdYMuD2DXFsnHbVi3WqsQE++R7nmA==
+
+"@xstate/test@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@xstate/test/-/test-0.4.1.tgz#115aed246dc352a52da3e5594d273ad9ccf483df"
+  integrity sha512-N8xEWcnWPVVpRkVgGGhpHGTJKLnm2UyGqkvk7eNaMqWdcg8fT6SyRSLtzJuqtJe8wZviScTr7P71Yp1cLawDWg==
+  dependencies:
+    "@xstate/graph" "^1.1.0"
+    chalk "^2.4.2"
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -10752,6 +10765,11 @@ xmlbuilder@~11.0.0:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
   integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
+
+xstate@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.13.0.tgz#0be22ceb8bae2bc6a025fab330fe44204d76771c"
+  integrity sha512-UnUJJzP2KTPqnmxIoD/ymXtpy/hehZnUlO6EXqWC/72XkPb15p9Oz/X4WhS3QE+by7NP+6b5bCi/GTGFzm5D+A==
 
 xtend@^4.0.0, xtend@^4.0.1, xtend@^4.0.2, xtend@~4.0.1:
   version "4.0.2"

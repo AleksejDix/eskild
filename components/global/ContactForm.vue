@@ -66,7 +66,7 @@
       </label>
     </div>
 
-    <button class="button">Senden</button>
+    <button type="submit" class="button">Senden</button>
   </form>
 </template>
 <script>
