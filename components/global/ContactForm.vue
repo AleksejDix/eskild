@@ -1,10 +1,6 @@
 <template>
-  <form
-    action="https://getsimpleform.com/messages?form_api_token=502d4ebb6e043c105ad2d0ed3da64ade"
-    method="post"
-    class="space-y-4"
-  >
-    <input type='hidden' name='redirect_to' value='http://localhost:3000/thank-you' />
+  <form name="ask-question" method="post" class="space-y-4" netlify>
+    <input type="hidden" name="form-name" value="ask-question" />
 
     <label class="block">
       <span class="text-gray-700">Name</span>
@@ -78,13 +74,13 @@ export default {
   data() {
     return {
       form: {
-        name: "",
-        email: "",
-        tel: "",
-        text: "",
+        name: '',
+        email: '',
+        tel: '',
+        text: '',
         protection: false
       }
-    };
+    }
   }
-};
+}
 </script>

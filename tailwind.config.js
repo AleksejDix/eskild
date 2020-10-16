@@ -1,14 +1,15 @@
 /*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
+ ** TailwindCSS Configuration File
+ **
+ ** Docs: https://tailwindcss.com/docs/configuration
+ ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+ */
 module.exports = {
+  target: 'static',
   theme: {
     container: {
       center: true,
-      padding: '1.5rem',
+      padding: '1.5rem'
     },
     fontFamily: {
       display: ['Quicksand', 'sans-serif']
@@ -17,10 +18,10 @@ module.exports = {
       width: {
         '80': '20rem',
         '160': '40rem',
-        '240': '60rem',
+        '240': '60rem'
       },
       flex: {
-        '10auto': '1 0 auto',
+        '10auto': '1 0 auto'
       }
     },
     customForms: theme => ({
@@ -31,15 +32,15 @@ module.exports = {
           borderRadius: theme('borderRadius.lg'),
           borderWidth: theme('borderWidth[2]'),
           '&:focus': {
-            borderColor: theme('colors.white'),
+            borderColor: theme('colors.white')
           }
-        },
-      },
+        }
+      }
     })
   },
   variants: {},
   plugins: [
     require('@tailwindcss/custom-forms'),
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')
   ]
 }
