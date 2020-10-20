@@ -1,5 +1,11 @@
 <template>
-  <form name="ask-question" method="post" class="space-y-4" netlify>
+  <form
+    name="ask-question"
+    method="post"
+    class="space-y-4"
+    netlify
+    action="/thank-you"
+  >
     <input type="hidden" name="form-name" value="ask-question" />
 
     <label class="block">

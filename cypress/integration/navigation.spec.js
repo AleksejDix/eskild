@@ -1,16 +1,12 @@
-/// <reference types="cypress" />
-
 describe('website runs', () => {
-
   beforeEach(() => {
     cy.visit('/')
   })
-  
+
   it('should have a logo', () => {
     cy.contains('Podologische Praxis')
   })
-  
-  
+
   it('main navigation', () => {
     cy.contains('Startseite').click()
     cy.get('main h1').should('contain', 'Podologische Praxis E. Sörensen')
@@ -32,14 +28,17 @@ describe('website runs', () => {
 
     cy.contains('Workshops').click()
     cy.get('main h1').should('contain', 'Workshops')
-
   })
 
   it('footer navigation', () => {
-    cy.get('[data-cy="footernav"]').contains('Impressum').click()
+    cy.get('[data-cy="footernav"]')
+      .contains('Impressum')
+      .click()
     cy.get('main h1').should('contain', 'Impressum')
 
-    cy.get('[data-cy="footernav"]').contains('Datenschutz').click()
+    cy.get('[data-cy="footernav"]')
+      .contains('Datenschutz')
+      .click()
     cy.get('main h1').should('contain', 'Datenschutz')
   })
 
@@ -47,6 +46,4 @@ describe('website runs', () => {
     cy.visit('/thank-you')
     cy.get('main h1').should('contain', 'Danke')
   })
-
-
 })

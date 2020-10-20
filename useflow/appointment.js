@@ -59,7 +59,7 @@ export const appointmentStates = {
       type: 'final',
       meta: {
         test: cy => {
-          cy.get('main h1').should('contain', 'Terminwunsch')
+          cy.get('main h1').should('contain', 'Danke')
         }
       }
     }

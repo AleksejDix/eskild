@@ -14,7 +14,6 @@ const testModel = createModel(appointmentMachine).withEvents({
     cy.get('[name="protection"]').check()
   },
   SEND: cy => {
-    console.log('SUBMIT!!!')
     cy.get('[type="submit"]').click()
   }
 })
