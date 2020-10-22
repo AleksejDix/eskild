@@ -1,6 +1,6 @@
 ---
 title: Podologische Praxis E. Sörensen
-video: https://www.youtube.com/watch?v=scG-dfJ7txY&feature=youtu.be
+video: https://youtu.be/scG-dfJ7txY
 ---
 
 # Title 
