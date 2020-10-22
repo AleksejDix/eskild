@@ -3,8 +3,6 @@ title: Podologische Praxis E. Sörensen
 video: https://www.youtube.com/embed/scG-dfJ7txY
 ---
 
-# Title 
-
 Vielen Dank für die Auswahl unserer Podologische Praxis E. Sörensen. Wir
 erfüllen Ihre Bedürfnisse im Bereich Gesundheit und Pflege und bieten
 komplette Pflege für die Füße. Wir hoffen, dass Sie eine Menge
