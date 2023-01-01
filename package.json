@@ -14,7 +14,7 @@
     "@nuxt/content": "^1.1.0",
     "@nuxtjs/axios": "^5.12.2",
     "@tailwindcss/typography": "^0.2.0",
-    "nuxt": "^2.14.7"
+    "nuxt": "^3.0.0"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.8.1",
@@ -23,7 +23,7 @@
     "@xstate/test": "^0.4.1",
     "babel-plugin-istanbul": "^6.0.0",
     "cypress": "^5.4.0",
-    "nuxt-purgecss": "^1.0.0",
+    "nuxt-purgecss": "^2.0.0",
     "xstate": "^4.13.0"
   }
 }
